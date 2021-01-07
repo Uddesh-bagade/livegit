@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  counter-reset: section;
+}
+
+h2::before {
+  counter-increment: section;
+  content: "section " counter(section) ": ";
+}
+</style>
+</head>
+<body>
+
+<h1>CSS</h1>
+<h2>PHP</h2>
+<h2>HTML</h2>
+<h2>javascript</h2>
+
+</body>
+</html>
